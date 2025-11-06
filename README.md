@@ -1,16 +1,83 @@
-# React + Vite
+# React JS, JSX, and CSS - Front-end Development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern React application showcasing front-end development best practices using React, JSX, and CSS. Built with Vite for optimal development experience and performance.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates:
+- Modern React components and hooks
+- Context API for state management
+- Custom hooks for local storage
+- Responsive layouts and styling
+- API integration for posts
+- Component-based architecture
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── api/
+│   └── posts.js         # API integration for posts
+├── components/
+│   ├── Button.jsx      # Reusable button component
+│   ├── Card.jsx        # Card component
+│   ├── Footer.jsx      # Footer component
+│   ├── Layout.jsx      # Main layout wrapper
+│   └── Navbar.jsx      # Navigation component
+├── context/
+│   └── ThemeContext.jsx # Theme context
+├── hooks/
+│   └── useLocalStorage.js # Custom hook
+└── pages/
+    ├── Home.jsx        # Home page
+    ├── Posts.jsx       # Posts page
+    └── Tasks.jsx       # Tasks page
+```
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React with JSX
+- Vite for build tooling
+- Modern JavaScript (ES6+)
+- CSS for styling
+- ESLint for code quality
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to the local server address shown in the terminal
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Features
+
+- **Theme Context**: Global theme management using React Context
+- **Local Storage Hook**: Custom hook for persistent data storage
+- **Component Library**: Reusable components like Button and Card
+- **Responsive Layout**: Consistent layout with Navbar and Footer
+- **Posts Integration**: API integration for posts management
+- **Task Management**: Dedicated tasks page with state management
+
+## Best Practices
+
+- Organized project structure
+- Component reusability
+- Custom hooks for logic abstraction
+- Context-based state management
+- ESLint for code quality
+- Modern React patterns
