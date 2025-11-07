@@ -33,9 +33,9 @@ export default function Tasks() {
 
   return (
     <div className="max-w-3xl mx-auto mt-10 p-4">
-      <Card className="bg-gradient-to-b from-blue-50 to-white border border-blue-200 shadow-md rounded-2xl p-6">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4 text-center">
-          📝 My Tasks
+      <Card className="bg-gradient-to-b from-blue-50 to-white dark:from-slate-800 dark:to-slate-900 border border-blue-200 dark:border-slate-700 shadow-md rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4 text-center">
+          My Tasks
         </h2>
 
         <div className="flex gap-3 mb-6">
@@ -43,7 +43,7 @@ export default function Tasks() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Add a new task..."
-            className="flex-1 p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="flex-1 p-3 rounded-lg border border-blue-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-500"
           />
           <Button onClick={addTask}>Add</Button>
         </div>
@@ -75,8 +75,8 @@ export default function Tasks() {
                 key={task.id}
                 className={`flex items-center justify-between p-3 border rounded-xl transition-all duration-300 ${
                   task.completed
-                    ? "bg-blue-100 border-blue-200 opacity-70"
-                    : "bg-white border-blue-100 hover:shadow-md"
+                    ? "bg-blue-100 dark:bg-slate-700 border-blue-200 dark:border-slate-600 opacity-70"
+                    : "bg-white dark:bg-slate-800 border-blue-100 dark:border-slate-700 hover:shadow-md"
                 }`}
               >
                 <div

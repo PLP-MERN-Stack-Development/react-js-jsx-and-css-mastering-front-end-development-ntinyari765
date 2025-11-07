@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-100 px-6 py-4 flex justify-between items-center shadow-md">
       <h1 className="font-bold text-lg tracking-wide">
-        <Link to="/">TaskMate</Link>
+        <Link to="/">TaskFlow</Link>
       </h1>
       <div className="flex gap-6 items-center">
         <NavLink to="/" className={({ isActive }) => isActive ? "font-semibold underline" : ""}>Home</NavLink>
